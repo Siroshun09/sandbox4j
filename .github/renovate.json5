@@ -4,5 +4,6 @@
     "config:base"
   ],
   baseBranches: [
+    "gradle/single-project"
   ]
 }
