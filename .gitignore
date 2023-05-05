@@ -1,0 +1,10 @@
+# Ignore maven directory and file
+target/
+dependency-reduced-pom.xml
+
+# Ignore gradle directories
+.gradle/
+build
+
+# Ignore idea directory
+.idea/
