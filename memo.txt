@@ -1,0 +1,5 @@
+- 期間設定 (datetime, date, time) の end は含むべき?
+  - プログラマー的には start は含む、end は含まないが直感的だが...
+  - datetime と time は含まなくてもそんなに差はなさそう
+  - date は利用者的には含んだほうが直感的な気もする
+  -> include_end (default: true) で指定できるようにした

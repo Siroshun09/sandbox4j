@@ -20,6 +20,12 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper", "paper-api", "1.19.4-R0.1-SNAPSHOT")
+    api("com.github.siroshun09.configapi", "configapi-yaml", "4.6.4")
+    implementation("org.yaml", "snakeyaml", "2.0")
+    compileOnly("net.luckperms", "api", "5.4")
+
+    testImplementation(platform("org.junit:junit-bom:5.9.3"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
 }
 
 tasks {
@@ -30,5 +36,9 @@ tasks {
 
     processResources {
         filteringCharset = Charsets.UTF_8.name()
+    }
+
+    test {
+        useJUnitPlatform()
     }
 }
