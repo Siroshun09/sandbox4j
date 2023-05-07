@@ -5,11 +5,6 @@ plugins {
 group = "com.github.siroshun09.sandbox4j"
 version = "0.0.1-SNAPSHOT"
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-}
-
 repositories {
     mavenCentral()
 }
@@ -21,14 +16,22 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
 }
 
+val javaVersion = JavaVersion.VERSION_17
+val charset = Charsets.UTF_8
+
+java {
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+}
+
 tasks {
     compileJava {
-        options.encoding = Charsets.UTF_8.name()
-        options.release.set(17)
+        options.encoding = charset.name()
+        options.release.set(javaVersion.ordinal + 1)
     }
 
     processResources {
-        filteringCharset = Charsets.UTF_8.name()
+        filteringCharset = charset.name()
     }
 
     test {
