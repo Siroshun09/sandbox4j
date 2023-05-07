@@ -15,7 +15,10 @@ repositories {
 }
 
 dependencies {
+    api("org.jetbrains:annotations:24.0.1")
 
+    testImplementation(platform("org.junit:junit-bom:5.9.3"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.3")
 }
 
 tasks {
@@ -26,5 +29,13 @@ tasks {
 
     processResources {
         filteringCharset = Charsets.UTF_8.name()
+    }
+
+    test {
+        useJUnitPlatform()
+
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
     }
 }
