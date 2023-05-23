@@ -1,0 +1,6 @@
+name: SandboxForPaper
+main: com.github.siroshun09.sandbox4j.paper.PaperSandboxPlugin
+version: ${projectVersion}
+api-version: 1.19
+folia-supported: true
+author: Siroshun09

@@ -38,6 +38,10 @@ tasks {
 
     processResources {
         filteringCharset = charset.name()
+
+        filesMatching(listOf("plugin.yml")) {
+            expand("projectVersion" to project.version)
+        }
     }
 
     test {
