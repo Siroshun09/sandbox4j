@@ -2,7 +2,7 @@
 
 annotations = "24.0.1"
 
-junit = "5.9.3"
+junit = "5.10.0"
 
 [libraries]
 
