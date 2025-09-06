@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    api("org.jetbrains:annotations:24.1.0")
+    api("org.jetbrains:annotations:26.0.2-1")
 
     testImplementation(platform("org.junit:junit-bom:6.0.0"))
     testImplementation("org.junit.jupiter:junit-jupiter:6.0.0")
