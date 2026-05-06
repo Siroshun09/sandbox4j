@@ -1,12 +1,12 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>Siroshun09/renovate-config//github-actions/renovate.json5",
-    "github>Siroshun09/renovate-config//java/maven/renovate.json5",
-    "github>Siroshun09/renovate-config//java/gradle/renovate.json5"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'github>Siroshun09/renovate-config//github-actions/renovate.json5',
+    'github>Siroshun09/renovate-config//java/maven/renovate.json5',
+    'github>Siroshun09/renovate-config//java/gradle/renovate.json5',
   ],
-  baseBranches: [
-    "gradle/single-project",
-    "gradle/multi-project"
-  ]
+  baseBranchPatterns: [
+    'gradle/single-project',
+    'gradle/multi-project',
+  ],
 }
