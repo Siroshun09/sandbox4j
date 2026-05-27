@@ -12,8 +12,8 @@ repositories {
 dependencies {
     api("org.jetbrains:annotations:26.1.0")
 
-    testImplementation(platform("org.junit:junit-bom:6.0.3"))
-    testImplementation("org.junit.jupiter:junit-jupiter:6.0.3")
+    testImplementation(platform("org.junit:junit-bom:6.1.0"))
+    testImplementation("org.junit.jupiter:junit-jupiter:6.1.0")
 }
 
 val javaVersion = JavaVersion.VERSION_17
